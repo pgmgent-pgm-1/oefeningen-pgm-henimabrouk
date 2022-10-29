@@ -154,7 +154,7 @@
         ],
       },
     ];
-    const getStringForHeadline = (concert) => {
+const getStringForHeadline = (concert) => {
   if (concert.isHeadliner) {
 return `HHHHHHHHHHHHHHHHHHHHHHHHHEADLINERHHHHHHHHHHHHHHHHHHHHHHHHHH
 ‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐`;
@@ -219,7 +219,7 @@ const getStringForComments = (comments) => {
       return `*${comment.message} Written by: ${comment.nickName}
           ${comment.comments ? getStringForComments(comment.comments) : ''}`;
   })
-}
+};
   
   
   
